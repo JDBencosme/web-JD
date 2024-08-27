@@ -1,0 +1,38 @@
+syntax = "proto3";
+//import 'empty.proto'; //utilizar los formatos predefinidos.
+
+package encuestarn;
+
+
+//Los mensajes en el diseño del API.
+message EncuestaRequest{
+  string usuario=1;
+}
+
+message EncuestaResponse{
+  string nombre=1;
+  string sector=2;
+  string nivel=3;
+  string fecha=4;
+  string latitude=5;
+  string longitude=6;
+  string accuracy=7;
+  string usuario=8;
+  string mimetype=9;
+  string base64=10;
+}
+
+message ListaEncuesta{
+  repeated EncuestaResponse encuesta=1;
+}
+
+//Mensaje vacio.
+message Empty{
+
+}
+
+service EncuestaRn{
+  rpc listaEncuestaxUser(EncuestaRequest) returns (ListaEncuesta);
+  rpc crearEncuesta(EncuestaResponse) returns (EncuestaResponse);
+  rpc listaEncuesta(Empty) returns (ListaEncuesta); //utilizando los formatos predefinidos.
+}
