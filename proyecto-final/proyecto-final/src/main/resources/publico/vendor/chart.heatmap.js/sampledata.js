@@ -1,4 +1,4 @@
-var getColorForPercentage = function (pct, minVal, maxVal, colorGradiant) {
+﻿var getColorForPercentage = function (pct, minVal, maxVal, colorGradiant) {
     var finalColorPercent = pct;
 
     if (minVal >= 0 && maxVal > 0 && maxVal > minVal) {
