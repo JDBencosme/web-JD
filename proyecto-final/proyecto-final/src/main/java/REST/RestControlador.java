@@ -2,7 +2,7 @@ package REST;
 
 import io.javalin.http.Handler;
 import javalinjwt.JavalinJWT;
-import controladores.LoginControlador;
+import Controladores.LoginControlador;
 import entidades.Encuesta;
 import entidades.Foto;
 import entidades.Usuario;

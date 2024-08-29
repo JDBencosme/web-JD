@@ -1,4 +1,4 @@
-package controladores;
+package Controladores;
 
 import static org.pucmm.Main.*;
 import io.javalin.http.Handler;

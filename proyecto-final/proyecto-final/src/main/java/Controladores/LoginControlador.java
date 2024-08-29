@@ -1,4 +1,4 @@
-package controladores;
+package Controladores;
 
 import io.javalin.http.Handler;
 import java.util.Map;
